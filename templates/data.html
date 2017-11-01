@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <header>
+      <title>cryptocurrency</title>
+  </header>
+
+   <body>
+   
+      <table border = 1>
+         <thead>
+            <td>cryptocurrency</td>
+            <td>Price</td>
+            <td>Change since last visit</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["Name"]}}</td>
+               <td>{{row["Price"]}}</td>
+               <td> {{ row["Change"]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+      
+      <a href = "/">Go back to home page</a>
+      
+   </body>
+</html>
